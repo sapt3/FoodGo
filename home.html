@@ -1,0 +1,13 @@
+<section id="header">
+    <div ng-hide = "app.data.text" class="loader"></div>
+    <header>
+        <h1>{{app.data.text}}</h1>
+        <p>FoodGo</p>
+
+    </header>
+    <footer>
+        <a href="#!/menu" class="button style2 scrolly-middle">Go to Menu</a>
+
+        <p ng-show="app.data.tagline">{{app.data.tagline}}</p>
+    </footer>
+</section>

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background-image: url("assets-food/backdrop.jpg");
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: top left, center 0;
+    background-attachment: fixed, fixed;
+    font-size: 18pt;
+    line-height: 1.75em;
+    font-weight: 300;
+    color: #3a3939;
+    text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+    -webkit-text-stroke: 0.25px;
+}
+
+#header {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    margin: 0;
+    padding-top: 8em;
+    cursor: default;
+    font-family: "Open Sans";
+}
+
+#header header {
+    display: inline-block;
+}
+#header header h1 {
+    font-size: 1.75em;
+    font-weight: 600;
+    width: auto;
+    font-family: sans-serif;
+    margin: 10px;
+
+}
+
+
+#header header p {
+    border-top: solid 1px rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    font-size: 1.5em;
+    padding: 8px;
+    margin: 8px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.button {
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    align-content: center;
+    -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    border: 0;
+    background: #FFF;
+    color: #A8A8A8;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    padding: 0.3em 2em;
+    text-align: center;
+    border-radius: 1em;
+    font-size: 0.8em;
+    font-family: 'Open Sans';
+}
+
+/* #header header p::before {
+    padding-left: 10px;
+    align-content: center;
+    content: '';
+    display: block;
+    border-top: solid 1px rgba(255, 255, 255, 0.5);
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+} */
+
+#header footer p {
+    margin: 2em;
+    line-height: 1.5em;
+    font-size: 0.7em;
+    font-weight: 100;
+    font-family: 'Open Sans';
+}
+
+.loader {
+    align-content: center;
+    border: 4px solid #f3f3f3; /* Light grey */
+    border-top: 4px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes slideOutLeft {
+    to      { transform: translateX(-100%); }
+}
+
+@keyframes slideInRight {
+    from    { transform:translateX(100%); }
+    to      { transform: translateX(0); }
+}
+
+/* .page.ng-enter {
+    z-index: 8888;
+    animation:slideInRight 0.5s both ease-in; 
+} */
+.page.ng-leave {
+    z-index: 8888;
+    animation:slideOutLeft 0.5s both ease-in; 
+}

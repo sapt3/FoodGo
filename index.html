@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Food Go</title>
+
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="main.css" />
+    <script src="main.js"></script>
+    <meta name="theme-color" content="#db5945">
+    <link rel="shortcut icon" type="image/png" href="assets-food/favicon.png" />
+</head>
+
+<body ng-controller="MainController as main">
+    <div id="main">
+        <div class= "page" ng-view></div>
+    </div>
+</body>
+
+<script>
+    var config = {
+        apiKey: "AIzaSyBS1KkkCRs1APC0pJHKdbHOnNROf7UhHs4",
+        authDomain: "foodgo18.firebaseapp.com",
+        databaseURL: "https://foodgo18.firebaseio.com",
+        projectId: "foodgo18",
+        storageBucket: "foodgo18.appspot.com",
+        messagingSenderId: "673050844103"
+    };
+    firebase.initializeApp(config);
+</script>
+
+</html>
+<style>
+
+</style>
