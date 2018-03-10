@@ -11,11 +11,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 body {
-    background-image: url("assets-food/backdrop.jpg");
-    background-repeat: repeat, no-repeat;
-    background-size: auto, cover;
-    background-position: top left, center 0;
-    background-attachment: fixed, fixed;
+  
+   
     font-size: 18pt;
     line-height: 1.75em;
     font-weight: 300;
@@ -24,7 +21,23 @@ body {
     -webkit-text-stroke: 0.25px;
 }
 
+#main_container{
+    background: url(assets-food/backdrop.jpg) no-repeat center center fixed; 
+    background-repeat: repeat, no-repeat;
+    background-size: auto, cover;
+    background-position: top left, center 0;
+    background-attachment: fixed, fixed;
+}
+
+
 #header {
+    
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
     position: relative;
     color: #fff;
     text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
@@ -132,7 +145,24 @@ body {
     z-index: 8888;
     animation:slideInRight 0.5s both ease-in; 
 } */
-.page.ng-leave {
-    z-index: 8888;
-    animation:slideOutLeft 0.5s both ease-in; 
+
+
+.brand{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.navigation{
+    background: #FFF;
+}
+
+/*
+------------------------------Menu-----------------------------
+*/
+
+.navigation #cart{
+    padding: 10px;
+    color: gray;
+}
+.bg{
+    background: #FFF;
 }
