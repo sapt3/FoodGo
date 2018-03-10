@@ -23,7 +23,6 @@
     });
 
     app.controller('MainController', function() {
-        
     });
 
     app.controller('MenuController', function($firebaseObject){
